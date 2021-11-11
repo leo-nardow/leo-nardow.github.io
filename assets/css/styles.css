@@ -341,6 +341,16 @@ img{
     transition: .3;
 }
 
+.button__icon__working{
+    font-size: 1.8rem;
+    margin-left: var(--mb-0-5);
+    transition: .3;
+}
+
+.d-flex{
+    display: flex;
+}
+
 .button--flex{
     display: inline-flex;
     align-items: center;
@@ -599,6 +609,10 @@ img{
 }
 
 .portfolio__button:hover .button__icon{
+    transform: translateX(.25rem);
+}
+
+.portfolio__button:hover .button__icon__working{
     transform: translateX(.25rem);
 }
 
