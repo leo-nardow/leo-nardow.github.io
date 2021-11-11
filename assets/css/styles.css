@@ -551,7 +551,7 @@ img{
 .qualification__line{
     display: block;
     width: 1px;
-    height: 90%;
+    height: 100%;
     background-color: var(--first-color);
     transform: translate(6px, -7px);
 }
@@ -908,5 +908,48 @@ img{
 
     .footer__copy{
         margin: 4.5rem;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .header,
+    .main,
+    .footer__container{
+        padding: 0;
+    }
+
+    .home__blob{
+        width: 320px;
+    }
+    .home__social{
+        transform: translate(-6rem);
+    }
+
+    .services__container{
+        grid-template-columns: repeat(4, 238px);
+    }
+
+    .portfolio__content{
+        column-gap: 5rem;
+    }
+    .swiper-portfolio-icon{
+        font-size: 3.5rem;
+    }
+    .swiper-button-prev{
+        left: -3.5rem;
+    }
+    .swiper-button-next{
+        right: -3.5rem;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullet{
+        bottom:  -4.5rem;
+    }
+
+    .contact__form{
+        width: 460px;
+    }
+    .contact__inputs{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
